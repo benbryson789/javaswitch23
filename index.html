@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+
+//Function and Switch
+var whatDoYouDo = function (job, firstName) {
+	switch (job) {
+		case 'teacher':
+			return firstName + ' teaches kids how to code';
+
+		case 'driver':
+			return firstName + ' drives a cab in Oregon';
+
+		case 'designer':
+			return firstName + ' designs beautiful websites';
+
+		default:
+			return firstName + ' does something else;';
+	}
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
+
+
+//Function Switch Program Converted to If/Else
+
+var whatDoYouDo = function (job,firstName){
+
+if (job == 'designer') {
+	
+	return firstName + ' designs beautiful dresses';
+}
+else if (job == 'driver') {
+	
+	return firstName + ' drives a cab in Oregon';
+}
+else if (job == 'teacher') {
+	
+	return firstName + ' teaches kids how to code';
+}
+
+else {
+		return firstName + ' does something else';
+
+}
+
+}
+
+</script>
+</body>
+</html>
+
